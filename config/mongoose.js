@@ -1,7 +1,8 @@
 //require the library
 const mongoose = require('mongoose');
 //connect to the database
-mongoose.connect('mongodb://localhost/codeial_development_db');
+mongoose.set('useCreateIndex', true);
+mongoose.connect('mongodb://localhost/codeial_development_db', {useNewUrlParser: true, useUnifiedTopology: true});
 // acqire the connection (to check if it is successfull)
 const db = mongoose.connection;
 //error
