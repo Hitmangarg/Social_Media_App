@@ -1,4 +1,6 @@
-body{
-    margin: 0;
-    background-color: plum;
-}
+body {
+  margin: 0;
+  background-color: white; }
+
+#layout-main {
+  height: 100%; }
