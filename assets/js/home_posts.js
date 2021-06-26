@@ -10,10 +10,10 @@
                 type: 'post',
                 url:'/posts/create',
                 data: newPostForm.serialize(),
-                success: function(error){
+                success: function(data){
                     console.log(data);
                 },error:function(error){
-                    console.log(err.response);
+                    console.log(err.responseText);
                 }
             })
             
