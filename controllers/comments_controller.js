@@ -43,7 +43,7 @@ module.exports.destroy = async function(req, res){
 
             return res.redirect('back');
         }else{
-            req.flash('success','You can not delete comment!');
+            req.flash('success','Unauthorized!');
             return res.redirect('back');
         }
     }catch(err){
