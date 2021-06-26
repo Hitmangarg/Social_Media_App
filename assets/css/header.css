@@ -3,7 +3,7 @@
   height: 80px;
   justify-content: space-between;
   padding: 0 15px;
-  background: #2196f3;
+  background: #2177bd;
   color: white;
   box-shadow: 1px 1px 1px 1px lightgrey; }
   #layout-header nav .mini-logo p {
@@ -13,8 +13,7 @@
   #layout-header nav .auth-links ul {
     margin: 10% 20px;
     display: flex;
-    font-size: 1.3rem;
-    color: red; }
+    font-size: 1.3rem; }
     #layout-header nav .auth-links ul li {
       margin-right: 20px;
       list-style: none; }
