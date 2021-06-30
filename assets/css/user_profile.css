@@ -1,2 +1,16 @@
 body {
-  background-color: lightblue; }
+  background-color: lightblue;
+  font-size: 1.5rem;
+ }
+ img{
+   margin-top:5px;
+   margin-bottom: 10px;
+   width:170px;
+   border:2px solid red;
+   margin-left:4px;
+ }
+input{
+  margin-bottom:6px;
+  margin-left:4px;
+  font-size:1.2rem;
+}
