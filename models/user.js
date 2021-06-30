@@ -16,10 +16,24 @@ const userSchema = new mongoose.Schema({
     name:{
         type:String,
         required:true
+    },
+    avtar:{
+        type: String
     }
 },
 {
     timestamps:true
 })
+
+let storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+      cb(null,path.join(__dirname,'..',AVTAR_PATH));
+    },
+    filename: function (req, file, cb) {
+      cb(null, file.fieldname + '-' + Date.now())
+    }
+  })
+
+
 const User = mongoose.model('User',userSchema);
 module.exports =User;
