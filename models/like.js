@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const likeSchema = new moongose.Schema({
+const likeSchema = new mongoose.Schema({
     user:{
         type: mongoose.Schema.ObjectId
     },
@@ -20,5 +20,5 @@ const likeSchema = new moongose.Schema({
 {
     timestamps:true
 });
-const Like =mongoose.models('Like',likeSchema);
-models.exports = Like;
+const Like =mongoose.model('Like',likeSchema);
+module.exports = Like;
